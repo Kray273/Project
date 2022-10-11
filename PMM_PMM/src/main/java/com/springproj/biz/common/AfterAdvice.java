@@ -2,8 +2,6 @@ package com.springproj.biz.common;
 
 import org.aspectj.lang.JoinPoint;
 
-import com.springproj.biz.domain.BoardVO;
-
 
 
 public class AfterAdvice { //메서드가 반드시 실행(예외 or 동작 할 때) 

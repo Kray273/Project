@@ -16,8 +16,8 @@
 		<a href="login.me">로그인</a>
 		
 		<br><br>
-		
-		<a href="getBoardList.do">글 목록 바로가기</a>
+	
+		<a href="getPointList.do">포인트등록</a>
 	</div>
 
 </body>
