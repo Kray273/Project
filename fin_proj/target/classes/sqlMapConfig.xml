@@ -34,6 +34,11 @@
 <!-- 고현서 -->
 
 
+<!-- 고의석 -->
+
+  		<typeAlias alias="point" type="com.spring.proj.domain.PMM.PointVO"/>
+  	
+
 
 
 	</typeAliases>
@@ -63,10 +68,13 @@
 			<mapper resource="mappings/ask/askMapping.xml"/>
 			
 			<!-- 고현서 -->
-			
-		
+
+		<!-- 고의석 -->
   		
-  
+
+  		<mapper resource="mappings/point/pointMapping.xml"/>
+  		
+  	
 	
 	
 	</mappers>

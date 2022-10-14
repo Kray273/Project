@@ -375,6 +375,53 @@ public class UserMemberController {
 		return "redirect:toMain.do";
 	}
 	
+	
+	@GetMapping("/joinMembership.do")
+	public String joinMembership(String ms_grade) {
+		
+
+		return "joinMembership";
+	}
+
+	@PostMapping("/joinMembership.do")
+	public String joinMembership(String ms_grade,HttpSession session) throws IllegalStateException, IOException {
+	
+		System.out.println("cont"+ms_grade);
+		
+		userMemberService.joinMembershipService(ms_grade);
+		
+		return "redirect:main.do";
+	}
+	
+	@GetMapping("/upgradeMembershipList.do")
+	public String upgradeMembership(String ms_grade) {
+		
+		return "upgradeMembershipList";
+	}
+	
+	@RequestMapping(value = "/upgradeMembershipList.do")
+	public String upgradeMembership(UserMemberVO vo, Model model) {
+
+		// System.out.println("글 목록 검색 처리");
+		
+		System.out.println("검색조건 : " +vo.getSearchCondition());
+		System.out.println("검색단어 : " +vo.getSearchKeyword());
+
+		if(vo.getSearchCondition() == null) {
+			vo.setSearchCondition("UM_NO");
+		}
+		
+		if(vo.getSearchKeyword() == null) {
+			vo.setSearchKeyword("");
+		}
+		
+		List<UserMemberVO> list = userMemberService.upgradeMembershipServiceList(vo);
+		
+		model.addAttribute("upgradeMembershipList", list);
+		System.out.println(vo);
+		return "upgradeMembershipList";
+	}
+	
 
 
 	

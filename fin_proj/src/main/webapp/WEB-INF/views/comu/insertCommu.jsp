@@ -75,7 +75,7 @@ button{
 			<input type="text" name="cm_title" class="commuarea"/>
 			<div class="container" style="height:10px;"></div>
 		<h1 class = "commutitle">작성자</h1>
-			<input type="text" name="cm_writer" class="commuarea" value="지비" readonly/>
+			<input type="text" name="cm_writer" class="commuarea" value="" readonly/>
 			<div class="container" style="height:10px;"></div>
 		<h1 class = "commutitle">내용</h1>
 			<textarea name="cm_desc" cols="40" rows="10"></textarea>

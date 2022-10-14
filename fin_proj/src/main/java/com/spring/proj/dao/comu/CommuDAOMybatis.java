@@ -1,4 +1,4 @@
-package com.spring.proj.dao.brand.comu;
+package com.spring.proj.dao.comu;
 
 import java.util.List;
 

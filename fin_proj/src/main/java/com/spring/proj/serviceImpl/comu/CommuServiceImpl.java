@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.spring.proj.dao.brand.comu.CommuDAOMybatis;
+import com.spring.proj.dao.comu.CommuDAOMybatis;
 import com.spring.proj.domain.comu.CommunityVO;
 import com.spring.proj.service.comu.CommuService;
 
