@@ -77,6 +77,30 @@
 	</delete>
 
 
+	
+	<!-- 멤버쉽 신청 -->
+	<update id="joinMembership">
+	<![CDATA[
+	UPDATE usermember set ms_grade = '1' WHERE um_no = #{um_no}
+	]]>
+	</update>
+	<!-- 멤버쉽 승인 -->
+	<update id="upgradeMembership">
+	<![CDATA[
+	UPDATE usermember set ms_grade = '2' WHERE um_no = #{um_no}
+	]]>
+	</update>
+	<!-- 멤버쉽 승인 대기 리스트 -->
+	<select id="upgradeMembershipList" 
+	resultType="usermember">
+		<![CDATA[
+		SELECT *
+		FROM usermember
+		WHERE ms_grade = 1
+		]]>
+	</select>
+
+
 </mapper>
 
  

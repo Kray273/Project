@@ -114,11 +114,13 @@ hr{
 </div>
 
 
-
-
-
-
-
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
 
 <footer>
 <%@ include file = "./../footer.jsp" %>

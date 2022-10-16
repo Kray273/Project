@@ -45,7 +45,7 @@
       				<ul class= "brandLogin"><a href="#">web</a></ul>
       				<ul class= "brandLogin"><a href="#">주문관리</a></ul>
       				<ul class= "brandLogin"><a href="#">리뷰관리</a></ul>
-      				<ul class= "brandLogin"><a href="getUAskList.zo">1대1문의</a></ul>
+      				<ul class= "brandLogin"><a href="getBAskList.zo">1대1문의</a></ul>
       				<!--관리자 아이디 로그인  -->
       				<ul class= "pmmLogin"><a href="#">유저관리</a></ul>
       				<ul class= "pmmLogin"><a href="#">브랜드관리</a></ul>

@@ -157,6 +157,24 @@ public class UserMemberDAOMybatis {
 			
 		}
 		
+		//멤버쉽 가입신청
+		public String joinMembership(String ms_grade) {
+			return  Integer.toString(mybatis.update("UserMember.joinMembership", ms_grade));
+		}
 		
-	
+		//멤버쉽 가입승인
+		public String upgradeMembership(String um_no) {
+			
+			return  Integer.toString(mybatis.update("UserMember.upgradeMembership", um_no));
+		}
+		
+		// 멤버쉽 가입신청 리스트
+		public List<UserMemberVO> upgradeMembershipList(UserMemberVO vo) {
+
+			System.out.println(vo);
+			
+			return mybatis.selectList("UserMember.upgradeMembershipList", vo);
+		}
+		
+
 }

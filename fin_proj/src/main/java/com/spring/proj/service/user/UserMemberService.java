@@ -36,4 +36,13 @@ public interface UserMemberService {
 	//이메일 중복체크
 	public int emailCheck(String um_email);
 	
+	//멤버쉽 가입 신청
+	String joinMembershipService(String ms_grade);
+	
+	//멤버쉽 가입 승인
+	String upgradeMembershipService(String um_no);
+	
+	//멤버쉽 가입 신청 리스트
+	List<UserMemberVO> upgradeMembershipServiceList(UserMemberVO vo);
+	
 }

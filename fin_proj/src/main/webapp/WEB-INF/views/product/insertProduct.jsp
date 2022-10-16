@@ -130,7 +130,7 @@ ul li {
 	<br>
 	<br>
 
-	<form name="#" class="mjoin_form form" action="insertProduct.do" method="post" enctype="multipart/form-data">
+	<form  class="mjoin_form form" action="insertProduct.do" method="post" enctype="multipart/form-data">
 
 		<!-- ◆공통페이지섹션 -->
 		<div class="mjoin">

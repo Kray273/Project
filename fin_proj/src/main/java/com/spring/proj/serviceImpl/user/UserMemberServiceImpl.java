@@ -86,6 +86,20 @@ int cnt = dao.emailCheck(um_email);
 		return dao.idFindUserMember(vo);
 	}
 
+	@Override
+	public String joinMembershipService(String ms_grade) {
+		return dao.joinMembership(ms_grade);
+	}
+	
+	@Override
+	public String upgradeMembershipService(String um_no) {
+		return dao.upgradeMembership(um_no);
+	}
+	
+	@Override
+	public List<UserMemberVO> upgradeMembershipServiceList(UserMemberVO vo) {	
+	 return dao.upgradeMembershipList(vo);
+	}		
 	
 	
 }

@@ -36,7 +36,7 @@
     <div class = "sidebaradmin list">
   <h1>혜택 관리</h1>
      <hr> 
-    <a href="#">포인트</a>
+    <a href="insertPoint.do">포인트</a>
     <a href="#">쿠폰</a>
     <a href="#">이벤트</a>
    </div>

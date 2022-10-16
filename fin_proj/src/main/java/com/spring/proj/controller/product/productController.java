@@ -37,21 +37,26 @@ public class productController {
 		String fileSaveFolder = session.getServletContext().getRealPath("/MemberUpload/");
 		System.out.println("=>" + fileSaveFolder);
 		
+	
+		
 		MultipartFile uploadFile = product.getUploadFile();
 		MultipartFile uploadFile2 = product.getUploadFile2();
+		
 		
 		
 		if(!uploadFile.isEmpty()) {
 			String fileName = uploadFile.getOriginalFilename();
 			uploadFile.transferTo(new File(fileSaveFolder+fileName));
 			product.setP_pimg(fileName);
+			
 		}
 		if(!uploadFile2.isEmpty()) {
 			String fileName = uploadFile2.getOriginalFilename();
 			uploadFile2.transferTo(new File(fileSaveFolder+fileName));
 			product.setP_dimg(fileName);
+			
 		}
-		
+		System.out.println(product);
 		productService.insertProductService(product);
 		
 		return "redirect:getProductList.do";
