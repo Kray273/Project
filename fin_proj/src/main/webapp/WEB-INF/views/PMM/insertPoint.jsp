@@ -9,7 +9,7 @@
 </head>
 <body>
 <%@ include file = "./../header.jsp" %>
-<%-- <%@ include file = "./../adminSidebar.jsp" %> --%>
+<%@ include file = "./../Sidebar.jsp" %>
 
 
 	<center>

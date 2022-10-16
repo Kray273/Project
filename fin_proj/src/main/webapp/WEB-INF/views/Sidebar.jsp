@@ -14,8 +14,8 @@
 <%@ include file="header.jsp" %>
 </header>
 <main>
-
-<%-- <% if (){  %> --%>
+<%-- 
+<% if (){  %>
 
 <div class ="sidebar">
 <div class = "sidebaruser list">
@@ -43,8 +43,8 @@
     <a href="#">찜 브랜드</a>
    </div>
    
-<%--  <%} else if (){  %>  
- --%>   
+ <%} else if (){  %>   --%>
+   
    <div class = "sidebaradmin list">
   <h1>유저 관리</h1>
      <hr> 
@@ -65,13 +65,13 @@
     <div class = "sidebaradmin list">
   <h1>혜택 관리</h1>
      <hr> 
-    <a href="#">포인트</a>
+    <a href="getPointList.do">포인트</a>
     <a href="#">쿠폰</a>
     <a href="#">이벤트</a>
    </div>
-<%--    
-  <%} else {  %>    
- --%>   <div class = "sidebarbrand list">
+   
+  <%-- <%} else {  %>    
+   <div class = "sidebarbrand list">
   <h1>브랜드 관리</h1>
      <hr> 
     <a href="#">브랜드 소개 수정</a>
@@ -97,10 +97,10 @@
     <a href="#">리뷰 관리</a>
     <a href="#">1대1 문의 관리</a>
    </div>
-   <%-- 
+   
  <%}  %>     
    
-    --%>
+   --%> 
    
    
    

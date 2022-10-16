@@ -10,6 +10,7 @@
 
 <h1><a href="toMain.do">메인으로 바로가기</a></h1>
 		
+<h1><a href="getPointList.do">관리자 페이지 바로가기</a></h1>
 
 </body>
 </html>

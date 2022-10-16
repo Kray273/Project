@@ -18,7 +18,7 @@
 <body>
 
 <%@ include file = "./../header.jsp" %>
-<%-- <%@ include file = "./../adminSidebar.jsp" %> --%>
+<%@ include file = "./../Sidebar.jsp" %>
 
 <center>
 		<h1>포인트 목록</h1>
