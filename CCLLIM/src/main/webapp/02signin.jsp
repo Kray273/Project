@@ -55,7 +55,7 @@
 <script>
 // script
 // 발급 받은 키
-      Kakao.init("7cf7f0702b6861c66a6cbc3fc964f788");
+      Kakao.init("?");
 
       function kakaoLogin() {
         window.Kakao.Auth.login({
